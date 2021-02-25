@@ -72,6 +72,20 @@ public:
         cout<<"Yea description of giant";
     }
 };
+class Neutron: public Star{
+public:
+    Neutron(){
+        this->name="Calvera";
+        this->age="285 thouthands years";
+        this->distant="~6523 light years";
+    }
+    void ShowFacts() override{
+        cout<<"Interesting Facts about Neutron";
+    }
+    void ShowDescription() override{
+        cout<<"Yea description of Neutron";
+    }
+};
 
 //Конец Алёниных классов
 
