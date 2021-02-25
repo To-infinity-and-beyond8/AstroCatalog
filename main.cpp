@@ -91,15 +91,15 @@ class Dwarf: public Star{
 class YellowDwarf: public Dwarf{
 public:
     YellowDwarf(){
-        this->name="Alpha Cent";
-        this->age="285 thouthands years";
-        this->distant="~6523 light years";
+        this->name="Alpha Centauri";
+        this->age="5 billion years";
+        this->distant="4.37 light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts about Neutron";
+        cout<<"Interesting Facts about YellowDwarf";
     }
     void ShowDescription() override{
-        cout<<"Yea description of Neutron";
+        cout<<"Yea description of YellowDwarf";
     }
 };
 
