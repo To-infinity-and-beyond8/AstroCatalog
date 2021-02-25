@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 class AstroObjects // поменял о на О
 {
