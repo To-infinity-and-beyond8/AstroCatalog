@@ -32,19 +32,28 @@ public:
         this->distant="53 mln light years";
     }
     void ShowFacts() override{
-        cout<<"Interesting Facts";
+        cout<<"Interesting Facts about Hole";
     }
     void ShowDescription() override{
-        cout<<"Yea description";
+        cout<<"Yea description of Hole";
+    }
+};
+class Nebula : public Starlike{
+public:
+    Nebula(){
+        this->name="Blue Snowball";
+        this->age="5 billion years";
+        this->distant="~2000-6000 light years";
+    }
+    void ShowFacts() override{
+        cout<<"Interesting Facts about snowball";
+    }
+    void ShowDescription() override{
+        cout<<"Yea description of snowball";
     }
 };
 
 int main(){
-    Hole h;
-    h.ShowDescription();
-    h.ShowFacts();
-    h.ShowAge();
-    h.ShowDistant();
-    h.ShowName();
+    
     return 0;
 };
