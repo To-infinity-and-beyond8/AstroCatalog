@@ -86,6 +86,22 @@ public:
         cout<<"Yea description of Neutron";
     }
 };
+class Dwarf: public Star{
+};
+class YellowDwarf: public Dwarf{
+public:
+    YellowDwarf(){
+        this->name="Alpha Cent";
+        this->age="285 thouthands years";
+        this->distant="~6523 light years";
+    }
+    void ShowFacts() override{
+        cout<<"Interesting Facts about Neutron";
+    }
+    void ShowDescription() override{
+        cout<<"Yea description of Neutron";
+    }
+};
 
 //Конец Алёниных классов
 
