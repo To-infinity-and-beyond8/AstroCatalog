@@ -56,6 +56,22 @@ public:
         cout<<"Yea description of snowball";
     }
 };
+class Star : public Starlike{
+};
+class Giant : public Star{
+public:
+    Giant(){
+        this->name="Betelgeuse";
+        this->age="8 million years";
+        this->distant="~500-600 light years";
+    }
+    void ShowFacts() override{
+        cout<<"Interesting Facts about giant";
+    }
+    void ShowDescription() override{
+        cout<<"Yea description of giant";
+    }
+};
 
 //Конец Алёниных классов
 
