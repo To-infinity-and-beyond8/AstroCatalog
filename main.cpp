@@ -22,6 +22,9 @@ cout<<distant;
 virtual void ShowFacts() = 0;
 virtual void ShowDescription() = 0;
 };
+
+// Начало Алёниных классов
+
 class Starlike : public Astroobjects{
 };
 class Hole : public Starlike{
@@ -52,6 +55,8 @@ public:
         cout<<"Yea description of snowball";
     }
 };
+
+//Конец Алёниных классов
 
 int main(){
     
