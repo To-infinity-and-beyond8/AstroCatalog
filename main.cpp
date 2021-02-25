@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class Astroobjects
+class AstroObjects // поменял о на О
 {
 protected:
 string name;
@@ -25,7 +25,7 @@ virtual void ShowDescription() = 0;
 
 // Начало Алёниных классов
 
-class Starlike : public Astroobjects{
+class Starlike : public AstroObjects{
 };
 class Hole : public Starlike{
 public:
@@ -57,6 +57,90 @@ public:
 };
 
 //Конец Алёниных классов
+
+//Начало классов Ивана
+
+class StarClusters: public AstroObjects
+{
+protected:
+    string AmountStars;
+
+public:
+    void ShowAmount()
+    {
+        cout << AmountStars;
+    }
+
+};
+
+class SphericalClusters: public StarClusters
+{
+public:
+    void ShowType()
+    {
+        cout << "spherical\n";
+    }
+
+};
+
+class ScatteredClusters: public StarClusters
+{
+public:
+    void ShowType()
+    {
+        cout << "scattered\n";
+    }
+
+};
+
+class OmegaCentaur: public SphericalClusters
+{
+
+
+ public:
+
+    void Init()
+    {
+        name = "Omega Centaur\n";
+        age =  "none\n";
+        distant = "15 - 17 ly\n";
+    }
+
+    void ShowFacts()
+    {
+        cout << "It was discovered in ancient times...\n";
+    }
+
+    void ShowDescription()
+    {
+        cout << "Standart spherical cluster\n";
+    }
+};
+
+class WildGuses: public ScatteredClusters
+{
+
+ public:
+
+    void Init()
+    {
+        name = "Wild Guses\n";
+        age =  "none\n";
+        distant = "6000 ly\n";
+    }
+
+    void ShowFacts()
+    {
+        cout << "It was discovered in 1681 in Berlin observatory\n";
+    }
+
+    void ShowDescription()
+    {
+        cout << "Standart scattered cluster\n";
+    }
+};
+
+//Конец классов Ивана
 
 int main(){
     
