@@ -148,6 +148,31 @@ class OmegaCentaur: public SphericalClusters
     }
 };
 
+class Tucan47: public SphericalClusters
+{
+
+
+ public:
+
+    Tucan47()
+    {
+        this->name="47 Tucan\n";
+        this->age="none\n";
+        this->distant="14514 ly\n";
+    }
+
+    void ShowFacts()
+    {
+        cout << "It was discovered in 14th September in 1751 by Nicola Lui de Lakail\n";
+    }
+
+    void ShowDescription()
+    {
+        cout << "Standart spherical cluster\n";
+    }
+};
+
+
 class WildGuses: public ScatteredClusters
 {
 
@@ -168,6 +193,29 @@ class WildGuses: public ScatteredClusters
     void ShowDescription()
     {
         cout << "Standart scattered cluster\n";
+    }
+};
+
+class Pleiades: public ScatteredClusters
+{
+
+ public:
+
+    Pleiades()
+    {
+        this->name="Pleiades\n";
+        this->age="115 million years\n";
+        this->distant="440 ly\n";
+    }
+
+    void ShowFacts()
+    {
+        cout << "It was discovered in ancient times...\n";
+    }
+
+    void ShowDescription()
+    {
+        cout << "It was named after the characters of Greek mythology\n";
     }
 };
 
