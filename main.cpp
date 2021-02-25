@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class astroobjects
+class AstroObjects
 {
 protected:
     string name;
