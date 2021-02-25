@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class AstroObjects // поменял о на О
+class AstroObjects 
 {
 protected:
 string name;
@@ -59,7 +59,7 @@ public:
 
 //Конец Алёниных классов
 
-//Начало классов Ивана
+//Начало классов Вани
 
 class StarClusters: public AstroObjects
 {
@@ -100,11 +100,11 @@ class OmegaCentaur: public SphericalClusters
 
  public:
 
-    void Init()
+    OmegaCentaur()
     {
-        name = "Omega Centaur\n";
-        age =  "none\n";
-        distant = "15 - 17 ly\n";
+        this->name="Omega Centaur\n";
+        this->age="none\n";
+        this->distant="15 - 17 ly\n";
     }
 
     void ShowFacts()
@@ -123,11 +123,11 @@ class WildGuses: public ScatteredClusters
 
  public:
 
-    void Init()
+    WildGuses()
     {
-        name = "Wild Guses\n";
-        age =  "none\n";
-        distant = "6000 ly\n";
+        this->name="Wild Guses\n";
+        this->age="none\n";
+        this->distant="6000 ly\n";
     }
 
     void ShowFacts()
@@ -141,7 +141,7 @@ class WildGuses: public ScatteredClusters
     }
 };
 
-//Конец классов Ивана
+//Конец классов Вани
 
 int main(){
     
