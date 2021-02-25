@@ -102,7 +102,20 @@ public:
         cout<<"Yea description of YellowDwarf";
     }
 };
-
+class WhiteDwarf : public Dwarf {
+public:
+    WhiteDwarf() {
+        this->name = "Sirius B";
+        this->age = "230 thouthands years";
+        this->distant = "~8.60 light years";
+    }
+    void ShowFacts() override {
+        cout << "Sirius B is the most massive dwarf";
+    }
+    void ShowDescription() override {
+        cout << "Yea description of dwarf";
+    }
+};
 //Конец Алёниных классов
 
 //Начало классов Вани
